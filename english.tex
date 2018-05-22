@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}}
+\newcommand{\Absender}[1][\normalsize]{\Skype}
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Emil Folino}}  \\
+\vspace{-2ex}
+\hline
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype.
+
+\begin{center}
+\begin{tabular}{l l}
+ Blekinge Institute of Technology  & \hspace{1in} \href{mailto:emil.folino@bth.se}{emil.folino@bth.se} \\
+ Department of Computer Science and Engineering    & \hspace{1in}  \href{https://emilfolino.se}{https://emilfolino.se}   \\
+ Address             & \hspace{1in}  Phone: +46731615921 \\
+ Hjortvägen 2, 37343 Rödeby, Sweden & \hspace{1in}  \\
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{tabular}{@{} l l}
+ \Large{Education}    & \textbf{Linköping University} \\
+     & MSc of Computer Science, 2015. \\
+     & \\
+  \Large{Teaching}   & \textbf{Blekinge Institute of Technology} \\
+     & University Lecturer, Web programming, 2016 - Present \\
+     & \\
+     & \\
+  \Large{Languages}   & Swedish, Danish and English (native) \\
+\end{tabular}
+
+
+\end{document}
